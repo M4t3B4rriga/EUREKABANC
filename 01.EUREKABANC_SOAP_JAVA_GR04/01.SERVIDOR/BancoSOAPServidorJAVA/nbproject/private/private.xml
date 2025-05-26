@@ -3,13 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/model/Cuenta.java</file>
             <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/controller/MovimientoService.java</file>
-            <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/controller/SucursalService.java</file>
-            <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/controller/UsuarioService.java</file>
+            <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/model/Movimiento.java</file>
             <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/controller/CuentaService.java</file>
-            <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/controller/ClienteService.java</file>
+            <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/ws/BancoWS.java</file>
             <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/config/DBConexion.java</file>
-            <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/controller/EmpleadoService.java</file>
         </group>
     </open-files>
 </project-private>

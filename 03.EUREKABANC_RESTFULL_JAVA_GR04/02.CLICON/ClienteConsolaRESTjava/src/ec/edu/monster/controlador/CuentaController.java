@@ -12,7 +12,7 @@ import com.google.gson.Gson;
  * @author sebas
  */
 public class CuentaController {
-   private final String baseUrl = "http://localhost:8080/BancoRESTServidorJAVA/api/cuenta";
+   private final String baseUrl = "http://10.40.26.183:8080/BancoRESTServidorJAVA/api/cuenta";
     private final Gson gson = new Gson();
 
     public double verSaldo(String codigo) {

@@ -14,7 +14,7 @@ app.use(bodyParser.text({ type: "*/*" }));
 app.post("/api/soap", async (req, res) => {
   try {
     const response = await axios.post(
-      "http://192.168.0.102:8080/BancoSOAPServidorJAVA/BancoWSService",
+      "http://10.40.26.183:8080/BancoSOAPServidorJAVA/BancoWSService",
       req.body,
       {
         headers: {

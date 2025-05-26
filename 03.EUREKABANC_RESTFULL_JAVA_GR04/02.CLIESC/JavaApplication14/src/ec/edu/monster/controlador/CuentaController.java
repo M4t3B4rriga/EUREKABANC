@@ -13,7 +13,7 @@ import java.net.URL;
  * @author sebas
  */
 public class CuentaController {
-    private final String BASE_URL = "http://192.168.0.102:8080/BancoRESTServidorJAVA/api/cuenta";
+    private final String BASE_URL = "http://10.40.26.183:8080/BancoRESTServidorJAVA/api/cuenta";
     private final Gson gson = new Gson();
 
     public double verSaldo(String codigo) {

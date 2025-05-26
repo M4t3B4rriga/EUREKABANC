@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = 3000;
-const REST_SERVER = "http://192.168.0.102:8080/BancoRESTServidorJAVA/api";
+const REST_SERVER = "http://10.40.26.183:8080/BancoRESTServidorJAVA/api";
 
 app.use(cors());
 app.use(bodyParser.json());
