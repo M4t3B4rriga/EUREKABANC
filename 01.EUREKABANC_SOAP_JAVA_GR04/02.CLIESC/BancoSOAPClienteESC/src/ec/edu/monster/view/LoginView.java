@@ -19,7 +19,7 @@ public class LoginView extends JFrame{
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                ImageIcon background = new ImageIcon(getClass().getResource("/ec/edu/monster/img/Login.png"));
+                ImageIcon background = new ImageIcon(getClass().getResource("/recursos/Login.png"));
                 g.drawImage(background.getImage(), 0, 0, getWidth(), getHeight(), this);
             }
         };

@@ -23,7 +23,7 @@ public class TransferenciaView extends JFrame{
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         // 1. Carga la imagen desde tus recursos
-        ImageIcon imagenFondo = new ImageIcon(getClass().getResource("/ec/edu/monster/img/Transferencia.png"));
+        ImageIcon imagenFondo = new ImageIcon(getClass().getResource("/recursos/Transferencia.png"));
         // 2. Dibuja la imagen ajustada al tamaño del panel
         g.drawImage(imagenFondo.getImage(), 0, 0, getWidth(), getHeight(), this);
     }

@@ -18,7 +18,7 @@ public class BancoView extends JFrame{
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                ImageIcon bg = new ImageIcon(getClass().getResource("/ec/edu/monster/img/Menu.png"));
+                ImageIcon bg = new ImageIcon(getClass().getResource("/recursos/Menu.png"));
                 g.drawImage(bg.getImage(), 0, 0, getWidth(), getHeight(), this);
             }
         };

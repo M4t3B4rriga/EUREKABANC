@@ -21,7 +21,7 @@ public class RetiroView extends JFrame{
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                ImageIcon bg = new ImageIcon(getClass().getResource("/ec/edu/monster/img/Retiro.png"));
+                ImageIcon bg = new ImageIcon(getClass().getResource("/recursos/Retiro.png"));
                 g.drawImage(bg.getImage(), 0, 0, getWidth(), getHeight(), this);
             }
         };
