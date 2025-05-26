@@ -17,7 +17,7 @@ public class DBConexion {
             return DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/eurekabank?useSSL=false&serverTimezone=UTC",
                 "root",
-                "root"
+                "rootroot"
             );
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();  // Esto es lo más importante

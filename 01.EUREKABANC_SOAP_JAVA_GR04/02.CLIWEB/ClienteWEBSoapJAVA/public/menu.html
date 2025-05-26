@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menú</title>
+  <style>
+    /* Fondo con imagen y filtro oscuro para mejor contraste */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('assets/Menu.png') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: relative;
+    }
+
+    /* Capa oscura para mejorar legibilidad */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+
+    .contenedor {
+      position: relative; /* para que esté encima del overlay */
+      z-index: 1;
+      background-color: rgba(0, 0, 50, 0.7);
+      padding: 40px 60px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      text-align: center;
+      max-width: 320px;
+      width: 100%;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    a {
+      display: block;
+      margin: 12px 0;
+      padding: 15px 0;
+      background-color: #004aad;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,74,173,0.6);
+      transition: background-color 0.3s, box-shadow 0.3s;
+      user-select: none;
+    }
+
+    a:hover, a:focus {
+      background-color: #003580;
+      box-shadow: 0 6px 14px rgba(0,53,128,0.9);
+      outline: none;
+    }
+
+    a:active {
+      background-color: #00245a;
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Bienvenido al Banco</h1>
+    <a href="verSaldo.html">Consultar Saldo</a>
+    <a href="depositar.html">Depositar</a>
+    <a href="retirar.html">Retirar</a>
+    <a href="transferir.html">Transferir</a>
+    <a href="login.html">Cerrar Sesión</a>
+  </div>
+</body>
+</html>

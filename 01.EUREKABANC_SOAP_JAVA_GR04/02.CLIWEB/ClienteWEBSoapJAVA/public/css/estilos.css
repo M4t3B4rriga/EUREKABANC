@@ -29,3 +29,47 @@ pre {
   background-color: #eaeaea;
   padding: 10px;
 }
+
+.icon {
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.icon-large {
+  width: 400px;
+  height: 400px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+#menu {
+  display: flex;
+  justify-content: center;
+  background-color: #004aad;
+  color: white;
+  padding: 10px;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+#menu .menu-card {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#menu .menu-card:hover {
+  background-color: #003580;
+}
+
+#formularios {
+  margin-top: 80px; /* Para que no se esconda bajo el menú */
+}

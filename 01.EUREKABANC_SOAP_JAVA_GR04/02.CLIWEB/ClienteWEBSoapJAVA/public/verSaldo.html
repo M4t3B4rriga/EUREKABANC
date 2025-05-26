@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>EUREKABANK - Ver Saldo</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <style>
+    /* Fondo con imagen */
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('assets/ConsultaSaldo.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      min-height: 100vh;
+      color: #030a14;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 60px; /* para dejar espacio al navbar */
+    }
+
+    /* Navbar fija en la parte superior */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 74, 173, 0.9); /* color azul semitransparente */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    .menu-item {
+      color: white;
+      margin: 0 20px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: color 0.3s;
+      user-select: none;
+    }
+
+    .menu-item:hover {
+      color: #ffcc00;
+    }
+
+    .logout {
+      color: #ff4d4d;
+    }
+
+    /* Caja formulario */
+    .formulario {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      width: 360px;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      padding: 12px;
+      margin: 15px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      width: 80%;
+      padding: 12px;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #003580;
+    }
+
+    /* Resultado en pre */
+    pre#resultado {
+      background-color: rgba(234, 234, 234, 0.9);
+      border-radius: 8px;
+      max-width: 80%;
+      margin: 30px auto;
+      padding: 15px;
+      white-space: pre-wrap;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="menu-item" onclick="window.location.href='verSaldo.html'">Ver Saldo</div>
+    <div class="menu-item" onclick="window.location.href='depositar.html'">Depositar</div>
+    <div class="menu-item" onclick="window.location.href='retirar.html'">Retirar</div>
+    <div class="menu-item" onclick="window.location.href='transferir.html'">Transferir</div>
+    <div class="menu-item logout" onclick="window.location.href='login.html'">Salir</div>
+  </div>
+
+  <div class="formulario">
+    <h3>Ver Saldo</h3>
+    <input type="text" id="cuentaSaldo" placeholder="Cuenta" />
+    <button onclick="verSaldo()">Consultar</button>
+  </div>
+
+  <pre id="resultado"></pre>
+  <script src="js/main.js"></script>
+</body>
+</html>
