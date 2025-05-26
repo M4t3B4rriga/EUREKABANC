@@ -14,28 +14,28 @@ import jakarta.jws.WebService;
 
 @WebService
 public class BancoWS {
-    private final ClienteService clienteController = new ClienteService();
     private final CuentaService cuentaController = new CuentaService();
-    private final EmpleadoService empleadoController = new EmpleadoService();
     private final MovimientoService movimientoController = new MovimientoService();
     
-     @WebMethod
-    public Object getClientes() {
-        return clienteController.listarClientes();
-    }
+
 
     @WebMethod
-    public Object getCuentas() {
-        return cuentaController.listarCuentas();
-    }
+public String depositar(String cuentaCodigo, double monto) {
+    return cuentaController.depositar(cuentaCodigo, monto);
+}
 
-    @WebMethod
-    public Object getEmpleados() {
-        return empleadoController.listarEmpleados();
-    }
+@WebMethod
+public String retirar(String cuentaCodigo, double monto) {
+    return cuentaController.retirar(cuentaCodigo, monto);
+}
 
-    @WebMethod
-    public Object getMovimientos() {
-        return movimientoController.listarMovimientos();
-    }
+@WebMethod
+public String transferir(String origen, String destino, double monto) {
+    return cuentaController.transferir(origen, destino, monto);
+}
+
+@WebMethod
+public double verSaldo(String cuentaCodigo) {
+    return cuentaController.verSaldo(cuentaCodigo);
+}
 }
