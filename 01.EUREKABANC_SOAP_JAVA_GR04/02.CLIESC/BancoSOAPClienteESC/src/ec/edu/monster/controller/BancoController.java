@@ -48,6 +48,26 @@ public class BancoController {
         if (vistaSaldo == null) {
             vistaSaldo = new SaldoView();
             vistaSaldo.setLocationRelativeTo(menuPrincipal);
+            
+             // Inicializar servicio
+        bancoService = new BancoSOAPService();
+
+        // Acción del botón "Consultar Saldo"
+        vistaSaldo.btnConsultar.addActionListener((ActionEvent e) -> {
+            String cuenta = vistaSaldo.txtCuenta.getText().trim();
+
+            if (cuenta.isEmpty()) {
+                JOptionPane.showMessageDialog(vistaSaldo, "Ingrese un número de cuenta", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            double saldo = bancoService.verSaldo(cuenta);
+            if (saldo >= 0) {
+                vistaSaldo.lblSaldo.setText(String.format("$ %.2f", saldo));
+            } else {
+                JOptionPane.showMessageDialog(vistaSaldo, "Cuenta no encontrada", "Aviso", JOptionPane.WARNING_MESSAGE);
+                vistaSaldo.lblSaldo.setText("$ 0.00");
+            }
+        });
         }
         vistaSaldo.setVisible(true);
     }

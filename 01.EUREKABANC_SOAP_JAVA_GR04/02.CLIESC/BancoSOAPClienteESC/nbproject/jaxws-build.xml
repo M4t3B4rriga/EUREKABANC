@@ -33,5 +33,22 @@
         <delete dir="${build.generated.dir}/jax-wsCache/BancoWSService"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/ec/edu/monster/ws"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-BancoWSService"/>
+    <target name="wsimport-client-BancoWSService_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/BancoWSService_1"/>
+        <property name="wsdl-BancoWSService_1" location="xml-resources/web-service-references/BancoWSService_1/wsdl/10.40.26.183_8080/BancoSOAPServidorJAVA/BancoWSService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/BancoWSService_1" destdir="${build.generated.dir}/jax-wsCache/BancoWSService_1" wsdl="${wsdl-BancoWSService_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://10.40.26.183:8080/BancoSOAPServidorJAVA/BancoWSService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-BancoWSService_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/BancoWSService_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/BancoWSService_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-BancoWSService_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/BancoWSService_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ec/edu/monster/ws"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-BancoWSService, wsimport-client-BancoWSService_1"/>
 </project>
