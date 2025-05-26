@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>EUREKABANK - Cliente Web SOAP</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <h1>EUREKABANK</h1>
+
+  <div id="login">
+    <h2>Login</h2>
+    <input type="text" id="usuario" placeholder="Usuario" />
+    <input type="password" id="clave" placeholder="Clave" />
+    <button onclick="login()">Iniciar sesión</button>
+  </div>
+
+  <div id="menu" class="oculto">
+    <h2>Operaciones</h2>
+    <button onclick="mostrarFormulario('verSaldo')">Ver Saldo</button>
+    <button onclick="mostrarFormulario('depositar')">Depositar</button>
+    <button onclick="mostrarFormulario('retirar')">Retirar</button>
+    <button onclick="mostrarFormulario('transferir')">Transferir</button>
+    <button onclick="logout()">Salir</button>
+  </div>
+
+  <div id="formularios" class="oculto">
+    <div id="form-verSaldo" class="formulario">
+      <h3>Ver saldo</h3>
+      <input type="text" id="cuentaSaldo" placeholder="Cuenta" />
+      <button onclick="verSaldo()">Consultar</button>
+    </div>
+
+    <div id="form-depositar" class="formulario">
+      <h3>Depositar</h3>
+      <input type="text" id="cuentaDeposito" placeholder="Cuenta" />
+      <input type="number" id="montoDeposito" placeholder="Monto" />
+      <button onclick="depositar()">Depositar</button>
+    </div>
+
+    <div id="form-retirar" class="formulario">
+      <h3>Retirar</h3>
+      <input type="text" id="cuentaRetiro" placeholder="Cuenta" />
+      <input type="number" id="montoRetiro" placeholder="Monto" />
+      <button onclick="retirar()">Retirar</button>
+    </div>
+
+    <div id="form-transferir" class="formulario">
+      <h3>Transferir</h3>
+      <input type="text" id="cuentaOrigen" placeholder="Cuenta Origen" />
+      <input type="text" id="cuentaDestino" placeholder="Cuenta Destino" />
+      <input type="number" id="montoTransferencia" placeholder="Monto" />
+      <button onclick="transferir()">Transferir</button>
+    </div>
+  </div>
+
+  <pre id="resultado"></pre>
+  <script src="js/main.js"></script>
+</body>
+</html>
