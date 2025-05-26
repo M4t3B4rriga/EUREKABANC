@@ -1,9 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ec.edu.monster.model;
-import java.util.Date;
+
+import java.time.LocalDateTime;
+
 /**
  *
  * @author sebas
@@ -11,9 +9,11 @@ import java.util.Date;
 public class Movimiento {
     private String cuentaCodigo;       // chr_cuencodigo
     private int numeroMovimiento;      // int_movinumero
-    private String fecha;              // dtt_movifecha (formato yyyy-MM-dd)
+    private LocalDateTime fecha;       // dtt_movifecha (ahora con fecha y hora)
     private String empleadoCodigo;     // chr_emplcodigo
     private String tipoCodigo;         // chr_tipocodigo
+    private String descripcionTipo;    // vch_tipodescripcion (nuevo campo)
+    private String accionTipo;         // vch_tipoaccion (nuevo campo)
     private double importe;            // dec_moviimporte
     private String cuentaReferencia;   // chr_cuenreferencia
 
@@ -34,12 +34,17 @@ public class Movimiento {
         this.numeroMovimiento = numeroMovimiento;
     }
 
-    public String getFecha() {
+    public LocalDateTime getFecha() {
         return fecha;
     }
 
-    public void setFecha(String fecha) {
+    public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
+    }
+    
+    // Método adicional para obtener fecha como String (opcional)
+    public String getFechaString() {
+        return fecha != null ? fecha.toString() : "";
     }
 
     public String getEmpleadoCodigo() {
@@ -56,6 +61,22 @@ public class Movimiento {
 
     public void setTipoCodigo(String tipoCodigo) {
         this.tipoCodigo = tipoCodigo;
+    }
+
+    public String getDescripcionTipo() {
+        return descripcionTipo;
+    }
+
+    public void setDescripcionTipo(String descripcionTipo) {
+        this.descripcionTipo = descripcionTipo;
+    }
+
+    public String getAccionTipo() {
+        return accionTipo;
+    }
+
+    public void setAccionTipo(String accionTipo) {
+        this.accionTipo = accionTipo;
     }
 
     public double getImporte() {
