@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Banco</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="fondo-login">
+  <div class="contenedor">
+    <h1>Login</h1>
+    <input type="text" id="usuario" placeholder="Usuario">
+    <input type="password" id="clave" placeholder="Contraseña">
+    <button onclick="login()">Ingresar</button>
+    <p id="error"></p>
+  </div>
+  <script>
+    function login() {
+      const u = document.getElementById("usuario").value.trim();
+      const c = document.getElementById("clave").value.trim();
+      if (u === "MONSTER" && c === "MONSTER9") {
+        window.location.href = "menu.html";
+      } else {
+        document.getElementById("error").textContent = "Credenciales inválidas";
+      }
+    }
+  </script>
+</body>
+</html>
