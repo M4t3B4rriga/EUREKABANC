@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliesc\\clienteescritoriosoap\\clienteescritoriosoap\\ec.edu.monster.vista\\transferirform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\ec.edu.monster.vista\\transferirform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliesc\\clienteescritoriosoap\\clienteescritoriosoap\\ec.edu.monster.vista\\saldoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\ec.edu.monster.vista\\saldoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliesc\\clienteescritoriosoap\\clienteescritoriosoap\\ec.edu.monster.vista\\retirarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\ec.edu.monster.vista\\retirarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliesc\\clienteescritoriosoap\\clienteescritoriosoap\\ec.edu.monster.vista\\movimientosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\ec.edu.monster.vista\\movimientosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliesc\\clienteescritoriosoap\\clienteescritoriosoap\\ec.edu.monster.vista\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\ec.edu.monster.vista\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\clienteescritoriosoap\\ec.edu.monster.vista\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\ec.edu.monster.vista\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliesc\\clienteescritoriosoap\\clienteescritoriosoap\\ec.edu.monster.vista\\depositarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\ec.edu.monster.vista\\depositarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliesc\\clienteescritoriosoap\\clienteescritoriosoap\\ec.edu.monster.vista\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\ec.edu.monster.vista\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliesc\\clienteescritoriosoap\\clienteescritoriosoap\\ec.edu.monster.vista\\depositarform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}|ClienteEscritorioSOAP\\ClienteEscritorioSOAP.csproj|solutionrelative:clienteescritoriosoap\\ec.edu.monster.vista\\depositarform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransferirForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\TransferirForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\TransferirForm.cs",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\TransferirForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\TransferirForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T04:46:03.32Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SaldoForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\SaldoForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\SaldoForm.cs",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\SaldoForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\SaldoForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T04:45:40.02Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RetirarForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\RetirarForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\RetirarForm.cs",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\RetirarForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\RetirarForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T04:45:15.33Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MovimientosForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\MovimientosForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\MovimientosForm.cs",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\MovimientosForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\MovimientosForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T04:42:13.388Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\MenuForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\MenuForm.cs",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\MenuForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\MenuForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T04:42:00.034Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DepositarForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\DepositarForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\DepositarForm.cs",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\DepositarForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\DepositarForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T04:41:40.365Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\LoginForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\LoginForm.cs",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\LoginForm.cs",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\LoginForm.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAD4vxYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T04:34:37.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\LoginForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\LoginForm.cs",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\LoginForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\LoginForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T17:36:24.194Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DepositarForm.Designer.cs",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\DepositarForm.Designer.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\DepositarForm.Designer.cs",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioSOAP\\ClienteEscritorioSOAP\\ec.edu.monster.vista\\DepositarForm.Designer.cs",
+              "RelativeToolTip": "ClienteEscritorioSOAP\\ec.edu.monster.vista\\DepositarForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T04:01:35.186Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
