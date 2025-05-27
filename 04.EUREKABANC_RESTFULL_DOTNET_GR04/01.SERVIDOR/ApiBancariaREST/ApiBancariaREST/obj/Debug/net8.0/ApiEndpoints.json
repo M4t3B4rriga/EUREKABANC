@@ -1,0 +1,123 @@
+[
+  {
+    "ContainingType": "ApiBancariaREST.ec.edu.monster.controlador.BancoController",
+    "Method": "Depositar",
+    "RelativePath": "api/Banco/Depositar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cuenta",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "monto",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBancariaREST.ec.edu.monster.controlador.BancoController",
+    "Method": "Movimientos",
+    "RelativePath": "api/Banco/Movimientos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cuenta",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBancariaREST.ec.edu.monster.controlador.BancoController",
+    "Method": "Retirar",
+    "RelativePath": "api/Banco/Retirar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cuenta",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "monto",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBancariaREST.ec.edu.monster.controlador.BancoController",
+    "Method": "Saldo",
+    "RelativePath": "api/Banco/Saldo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cuenta",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBancariaREST.ec.edu.monster.controlador.BancoController",
+    "Method": "Transferir",
+    "RelativePath": "api/Banco/Transferir",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "origen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "destino",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "monto",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBancariaREST.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiBancariaREST.WeatherForecast, ApiBancariaREST, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
