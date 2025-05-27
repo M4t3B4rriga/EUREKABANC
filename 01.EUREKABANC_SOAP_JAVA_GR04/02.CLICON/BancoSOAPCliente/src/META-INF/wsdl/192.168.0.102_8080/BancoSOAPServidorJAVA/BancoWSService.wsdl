@@ -4,23 +4,11 @@
 <xsd:import namespace="http://ws.monster.edu.ec/" schemaLocation="http://192.168.0.102:8080/BancoSOAPServidorJAVA/BancoWSService?xsd=1"/>
 </xsd:schema>
 </types>
-<message name="verSaldo">
-<part name="parameters" element="tns:verSaldo"/>
+<message name="consultarMovimientos">
+<part name="parameters" element="tns:consultarMovimientos"/>
 </message>
-<message name="verSaldoResponse">
-<part name="parameters" element="tns:verSaldoResponse"/>
-</message>
-<message name="depositar">
-<part name="parameters" element="tns:depositar"/>
-</message>
-<message name="depositarResponse">
-<part name="parameters" element="tns:depositarResponse"/>
-</message>
-<message name="transferir">
-<part name="parameters" element="tns:transferir"/>
-</message>
-<message name="transferirResponse">
-<part name="parameters" element="tns:transferirResponse"/>
+<message name="consultarMovimientosResponse">
+<part name="parameters" element="tns:consultarMovimientosResponse"/>
 </message>
 <message name="retirar">
 <part name="parameters" element="tns:retirar"/>
@@ -28,27 +16,49 @@
 <message name="retirarResponse">
 <part name="parameters" element="tns:retirarResponse"/>
 </message>
+<message name="verSaldo">
+<part name="parameters" element="tns:verSaldo"/>
+</message>
+<message name="verSaldoResponse">
+<part name="parameters" element="tns:verSaldoResponse"/>
+</message>
+<message name="transferir">
+<part name="parameters" element="tns:transferir"/>
+</message>
+<message name="transferirResponse">
+<part name="parameters" element="tns:transferirResponse"/>
+</message>
+<message name="depositar">
+<part name="parameters" element="tns:depositar"/>
+</message>
+<message name="depositarResponse">
+<part name="parameters" element="tns:depositarResponse"/>
+</message>
 <portType name="BancoWS">
-<operation name="verSaldo">
-<input wsam:Action="http://ws.monster.edu.ec/BancoWS/verSaldoRequest" message="tns:verSaldo"/>
-<output wsam:Action="http://ws.monster.edu.ec/BancoWS/verSaldoResponse" message="tns:verSaldoResponse"/>
-</operation>
-<operation name="depositar">
-<input wsam:Action="http://ws.monster.edu.ec/BancoWS/depositarRequest" message="tns:depositar"/>
-<output wsam:Action="http://ws.monster.edu.ec/BancoWS/depositarResponse" message="tns:depositarResponse"/>
-</operation>
-<operation name="transferir">
-<input wsam:Action="http://ws.monster.edu.ec/BancoWS/transferirRequest" message="tns:transferir"/>
-<output wsam:Action="http://ws.monster.edu.ec/BancoWS/transferirResponse" message="tns:transferirResponse"/>
+<operation name="consultarMovimientos">
+<input wsam:Action="http://ws.monster.edu.ec/BancoWS/consultarMovimientosRequest" message="tns:consultarMovimientos"/>
+<output wsam:Action="http://ws.monster.edu.ec/BancoWS/consultarMovimientosResponse" message="tns:consultarMovimientosResponse"/>
 </operation>
 <operation name="retirar">
 <input wsam:Action="http://ws.monster.edu.ec/BancoWS/retirarRequest" message="tns:retirar"/>
 <output wsam:Action="http://ws.monster.edu.ec/BancoWS/retirarResponse" message="tns:retirarResponse"/>
 </operation>
+<operation name="verSaldo">
+<input wsam:Action="http://ws.monster.edu.ec/BancoWS/verSaldoRequest" message="tns:verSaldo"/>
+<output wsam:Action="http://ws.monster.edu.ec/BancoWS/verSaldoResponse" message="tns:verSaldoResponse"/>
+</operation>
+<operation name="transferir">
+<input wsam:Action="http://ws.monster.edu.ec/BancoWS/transferirRequest" message="tns:transferir"/>
+<output wsam:Action="http://ws.monster.edu.ec/BancoWS/transferirResponse" message="tns:transferirResponse"/>
+</operation>
+<operation name="depositar">
+<input wsam:Action="http://ws.monster.edu.ec/BancoWS/depositarRequest" message="tns:depositar"/>
+<output wsam:Action="http://ws.monster.edu.ec/BancoWS/depositarResponse" message="tns:depositarResponse"/>
+</operation>
 </portType>
 <binding name="BancoWSPortBinding" type="tns:BancoWS">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
-<operation name="verSaldo">
+<operation name="consultarMovimientos">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -57,7 +67,16 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="depositar">
+<operation name="retirar">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="verSaldo">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -75,7 +94,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="retirar">
+<operation name="depositar">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

@@ -3,64 +3,61 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package ec.edu.monster.controller;
+
 import ec.edu.monster.config.DBConexion;
 import ec.edu.monster.model.Movimiento;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
-import jakarta.annotation.Resource;
-import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  *
  * @author sebas
  */
 @WebService
 public class MovimientoService {
+
     @WebMethod
-    public String registrarMovimiento(Movimiento mov) {
-        if (mov == null || mov.getCuentaCodigo() == null || mov.getCuentaCodigo().isEmpty()) {
-        throw new IllegalArgumentException("El código de cuenta es obligatorio");
-    }
+    public void registrarMovimiento(Connection con, String cuenta, String tipo, double monto, String empleado, String referencia) throws SQLException {
         String sql = "INSERT INTO movimiento(chr_cuencodigo, int_movinumero, dtt_movifecha, chr_emplcodigo, chr_tipocodigo, dec_moviimporte, chr_cuenreferencia) "
-                   + "VALUES (?, ?, ?, ?, ?, ?, ?)";
-        try (Connection con = DBConexion.getConnection();
-             PreparedStatement ps = con.prepareStatement(sql)) {
+                + "VALUES (?, ?, CURRENT_DATE, ?, ?, ?, ?)";
 
-            ps.setString(1, mov.getCuentaCodigo());
-            ps.setInt(2, mov.getNumeroMovimiento());
-            // Validar formato de fecha
-            try {
-                if (mov.getFecha() == null || mov.getFecha().isEmpty()) {
-                    return "Error: La fecha no puede ser nula o vacía.";
-                }
-                Date fechaSql = Date.valueOf(mov.getFecha()); // requiere formato yyyy-MM-dd
-                ps.setDate(3, fechaSql);
-            } catch (IllegalArgumentException e) {
-                return "Error: Formato de fecha inválido. Se requiere yyyy-MM-dd. Detalle: " + e.getMessage();
-                }
-           
-            ps.setString(4, mov.getEmpleadoCodigo());
-            ps.setString(5, mov.getTipoCodigo());
-            ps.setDouble(6, mov.getImporte());
-            ps.setString(7, mov.getCuentaReferencia());
+        // Obtener el siguiente número de movimiento
+        String countSql = "SELECT IFNULL(MAX(int_movinumero), 0) + 1 FROM movimiento WHERE chr_cuencodigo = ?";
+        int numero;
+        try (PreparedStatement psCount = con.prepareStatement(countSql)) {
+            psCount.setString(1, cuenta);
+            ResultSet rs = psCount.executeQuery();
+            rs.next();
+            numero = rs.getInt(1);
+        }
 
+        try (PreparedStatement ps = con.prepareStatement(sql)) {
+            ps.setString(1, cuenta);
+            ps.setInt(2, numero);
+            ps.setString(3, empleado);
+            ps.setString(4, tipo);
+            ps.setDouble(5, monto);
+            ps.setString(6, referencia); // Puede ser null
             ps.executeUpdate();
-            return "Movimiento registrado correctamente.";
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return "Error al registrar movimiento. " + e.getMessage();
         }
     }
 
     @WebMethod
-    public List<Movimiento> listarMovimientos() {
+    public List<Movimiento> listarMovimientosPorCuenta(String cuentaCodigo) {
         List<Movimiento> lista = new ArrayList<>();
-        String sql = "SELECT * FROM movimiento";
-        try (Connection con = DBConexion.getConnection();
-             Statement st = con.createStatement();
-             ResultSet rs = st.executeQuery(sql)) {
+        String sql = "SELECT m.*, tm.vch_tipodescripcion, tm.vch_tipoaccion "
+                + "FROM movimiento m "
+                + "JOIN tipomovimiento tm ON m.chr_tipocodigo = tm.chr_tipocodigo "
+                + "WHERE m.chr_cuencodigo = ? "
+                + "ORDER BY m.dtt_movifecha DESC, m.int_movinumero DESC";
+        try (Connection con = DBConexion.getConnection(); PreparedStatement ps = con.prepareStatement(sql)) {
+
+            ps.setString(1, cuentaCodigo);
+            ResultSet rs = ps.executeQuery();
+
             while (rs.next()) {
                 Movimiento m = new Movimiento();
                 m.setCuentaCodigo(rs.getString("chr_cuencodigo"));

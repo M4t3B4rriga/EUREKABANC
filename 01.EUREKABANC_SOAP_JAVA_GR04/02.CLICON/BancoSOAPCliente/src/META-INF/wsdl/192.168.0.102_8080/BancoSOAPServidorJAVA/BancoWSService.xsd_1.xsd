@@ -1,5 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?><!-- Published by XML-WS Runtime (https://github.com/eclipse-ee4j/metro-jax-ws). Runtime's version is Eclipse Metro/4.0.3.payara-p1 (metro-4.0.3.payara-maintenance-004e4e3; 2023-11-08T12:59:53+0000) XMLWS-Impl/4.0.2 XMLWS-API/4.0.1 XMLB-Impl/4.0.4 XMLB-API/4.0.1 git-revision#004e4e3. --><xs:schema xmlns:tns="http://ws.monster.edu.ec/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.monster.edu.ec/">
 
+<xs:element name="consultarMovimientos" type="tns:consultarMovimientos"/>
+
+<xs:element name="consultarMovimientosResponse" type="tns:consultarMovimientosResponse"/>
+
 <xs:element name="depositar" type="tns:depositar"/>
 
 <xs:element name="depositarResponse" type="tns:depositarResponse"/>
@@ -38,6 +42,32 @@
 <xs:complexType name="verSaldoResponse">
 <xs:sequence>
 <xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarMovimientos">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarMovimientosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:movimiento" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="movimiento">
+<xs:sequence>
+<xs:element name="accionTipo" type="xs:string" minOccurs="0"/>
+<xs:element name="cuentaCodigo" type="xs:string" minOccurs="0"/>
+<xs:element name="cuentaReferencia" type="xs:string" minOccurs="0"/>
+<xs:element name="descripcionTipo" type="xs:string" minOccurs="0"/>
+<xs:element name="empleadoCodigo" type="xs:string" minOccurs="0"/>
+<xs:element name="fecha" type="xs:string" minOccurs="0"/>
+<xs:element name="importe" type="xs:double"/>
+<xs:element name="numeroMovimiento" type="xs:int"/>
+<xs:element name="tipoCodigo" type="xs:string" minOccurs="0"/>
 </xs:sequence>
 </xs:complexType>
 

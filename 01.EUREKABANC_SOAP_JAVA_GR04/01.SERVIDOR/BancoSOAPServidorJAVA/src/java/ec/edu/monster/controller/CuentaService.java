@@ -8,26 +8,24 @@ package ec.edu.monster.controller;
  *
  * @author sebas
  */
-
 import ec.edu.monster.config.DBConexion;
-import ec.edu.monster.model.Cuenta;
 import ec.edu.monster.model.Cuenta;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
-import jakarta.annotation.Resource;
-import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
 @WebService
 public class CuentaService {
-    
+
+    private final MovimientoService movimientoService = new MovimientoService();
+
     @WebMethod
     public String registrarCuenta(Cuenta cuenta) {
         String sql = "INSERT INTO cuenta(chr_cuencodigo, chr_monecodigo, chr_sucucodigo, chr_emplcreacuenta, chr_cliecodigo, dec_cuensaldo, dtt_cuenfechacreacion, vch_cuenestado, int_cuencontmov, chr_cuenclave) "
-                   + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        try (Connection con = DBConexion.getConnection();
-             PreparedStatement ps = con.prepareStatement(sql)) {
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        try (Connection con = DBConexion.getConnection(); PreparedStatement ps = con.prepareStatement(sql)) {
 
             ps.setString(1, cuenta.getCodigo());
             ps.setString(2, cuenta.getMoneda());
@@ -52,9 +50,7 @@ public class CuentaService {
     public List<Cuenta> listarCuentas() {
         List<Cuenta> lista = new ArrayList<>();
         String sql = "SELECT * FROM cuenta";
-        try (Connection con = DBConexion.getConnection();
-             Statement st = con.createStatement();
-             ResultSet rs = st.executeQuery(sql)) {
+        try (Connection con = DBConexion.getConnection(); Statement st = con.createStatement(); ResultSet rs = st.executeQuery(sql)) {
             while (rs.next()) {
                 Cuenta c = new Cuenta();
                 c.setCodigo(rs.getString("chr_cuencodigo"));
@@ -74,89 +70,114 @@ public class CuentaService {
         }
         return lista;
     }
-    
+
     @WebMethod
-public String depositar(String cuentaCodigo, double monto) {
-    if (monto <= 0) return "Monto inválido";
-    String sql = "UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo + ? WHERE chr_cuencodigo = ?";
-    try (Connection con = DBConexion.getConnection();
-         PreparedStatement ps = con.prepareStatement(sql)) {
-        ps.setDouble(1, monto);
-        ps.setString(2, cuentaCodigo);
-        int rows = ps.executeUpdate();
-        return rows > 0 ? "Depósito exitoso" : "Cuenta no encontrada";
-    } catch (SQLException e) {
-        e.printStackTrace();
-        return "Error: " + e.getMessage();
-    }
-}
-
-@WebMethod
-public String retirar(String cuentaCodigo, double monto) {
-    if (monto <= 0) return "Monto inválido";
-    String sql = "UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo - ? WHERE chr_cuencodigo = ? AND dec_cuensaldo >= ?";
-    try (Connection con = DBConexion.getConnection();
-         PreparedStatement ps = con.prepareStatement(sql)) {
-        ps.setDouble(1, monto);
-        ps.setString(2, cuentaCodigo);
-        ps.setDouble(3, monto);
-        int rows = ps.executeUpdate();
-        return rows > 0 ? "Retiro exitoso" : "Saldo insuficiente o cuenta no encontrada";
-    } catch (SQLException e) {
-        e.printStackTrace();
-        return "Error: " + e.getMessage();
-    }
-}
-
-@WebMethod
-public String transferir(String origen, String destino, double monto) {
-    if (monto <= 0) return "Monto inválido";
-
-    try (Connection con = DBConexion.getConnection()) {
-        con.setAutoCommit(false);
-
-        // Retirar de origen
-        PreparedStatement ps1 = con.prepareStatement("UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo - ? WHERE chr_cuencodigo = ? AND dec_cuensaldo >= ?");
-        ps1.setDouble(1, monto);
-        ps1.setString(2, origen);
-        ps1.setDouble(3, monto);
-        int row1 = ps1.executeUpdate();
-
-        // Depositar a destino
-        PreparedStatement ps2 = con.prepareStatement("UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo + ? WHERE chr_cuencodigo = ?");
-        ps2.setDouble(1, monto);
-        ps2.setString(2, destino);
-        int row2 = ps2.executeUpdate();
-
-        if (row1 > 0 && row2 > 0) {
-            con.commit();
-            return "Transferencia exitosa";
-        } else {
-            con.rollback();
-            return "Error en transferencia. Verifica saldos y cuentas.";
+    public String depositar(String cuentaCodigo, double monto) {
+        if (monto <= 0) {
+            return "Monto inválido";
         }
-    } catch (SQLException e) {
-        e.printStackTrace();
-        return "Error: " + e.getMessage();
-    }
-}
+        String sql = "UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo + ? WHERE chr_cuencodigo = ?";
+        try (Connection con = DBConexion.getConnection()) {
+            con.setAutoCommit(false);
 
-@WebMethod
-public double verSaldo(String cuentaCodigo) {
-    String sql = "SELECT dec_cuensaldo FROM cuenta WHERE chr_cuencodigo = ?";
-    try (Connection con = DBConexion.getConnection();
-         PreparedStatement ps = con.prepareStatement(sql)) {
-        ps.setString(1, cuentaCodigo);
-        ResultSet rs = ps.executeQuery();
-        if (rs.next()) {
-            return rs.getDouble("dec_cuensaldo");
+            try (PreparedStatement ps = con.prepareStatement(sql)) {
+                ps.setDouble(1, monto);
+                ps.setString(2, cuentaCodigo);
+                int rows = ps.executeUpdate();
+                if (rows > 0) {
+                    movimientoService.registrarMovimiento(con, cuentaCodigo, "003", monto, "0001", null); // tipo "003" = DEPÓSITO, empleado fijo
+                    con.commit();
+                    return "Depósito exitoso";
+                } else {
+                    con.rollback();
+                    return "Cuenta no encontrada";
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return "Error: " + e.getMessage();
         }
-    } catch (SQLException e) {
-        e.printStackTrace();
     }
-    return -1;
-}
-    
+
+    @WebMethod
+    public String retirar(String cuentaCodigo, double monto) {
+        if (monto <= 0) {
+            return "Monto inválido";
+        }
+        String sql = "UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo - ? WHERE chr_cuencodigo = ? AND dec_cuensaldo >= ?";
+        try (Connection con = DBConexion.getConnection()) {
+            con.setAutoCommit(false);
+            try (PreparedStatement ps = con.prepareStatement(sql)) {
+                ps.setDouble(1, monto);
+                ps.setString(2, cuentaCodigo);
+                ps.setDouble(3, monto);
+                int rows = ps.executeUpdate();
+                if (rows > 0) {
+                    movimientoService.registrarMovimiento(con, cuentaCodigo, "004", monto, "0001", null); // tipo 004 = RETIRO
+                    con.commit();
+                    return "Retiro exitoso";
+                } else {
+                    con.rollback();
+                    return "Saldo insuficiente o cuenta no encontrada";
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return "Error: " + e.getMessage();
+        }
+    }
+
+    @WebMethod
+    public String transferir(String origen, String destino, double monto) {
+        if (monto <= 0) {
+            return "Monto inválido";
+        }
+
+        try (Connection con = DBConexion.getConnection()) {
+            con.setAutoCommit(false);
+
+            // Retirar de origen
+            PreparedStatement ps1 = con.prepareStatement("UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo - ? WHERE chr_cuencodigo = ? AND dec_cuensaldo >= ?");
+            ps1.setDouble(1, monto);
+            ps1.setString(2, origen);
+            ps1.setDouble(3, monto);
+            int row1 = ps1.executeUpdate();
+
+            // Depositar a destino
+            PreparedStatement ps2 = con.prepareStatement("UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo + ? WHERE chr_cuencodigo = ?");
+            ps2.setDouble(1, monto);
+            ps2.setString(2, destino);
+            int row2 = ps2.executeUpdate();
+
+            if (row1 > 0 && row2 > 0) {
+                movimientoService.registrarMovimiento(con, origen, "004", monto, "0001", destino); // tipo 004 = RETIRO
+                movimientoService.registrarMovimiento(con, destino, "003", monto, "0001", origen); // tipo 003 = DEPÓSITO    
+                con.commit();
+                return "Transferencia exitosa";
+            } else {
+                con.rollback();
+                return "Error en transferencia. Verifica saldos y cuentas.";
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return "Error: " + e.getMessage();
+        }
+    }
+
+    @WebMethod
+    public double verSaldo(String cuentaCodigo) {
+        String sql = "SELECT dec_cuensaldo FROM cuenta WHERE chr_cuencodigo = ?";
+        try (Connection con = DBConexion.getConnection(); PreparedStatement ps = con.prepareStatement(sql)) {
+            ps.setString(1, cuentaCodigo);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                return rs.getDouble("dec_cuensaldo");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
 
     @WebMethod
     public String probarConexion() {
@@ -167,5 +188,3 @@ public double verSaldo(String cuentaCodigo) {
         }
     }
 }
-
-
