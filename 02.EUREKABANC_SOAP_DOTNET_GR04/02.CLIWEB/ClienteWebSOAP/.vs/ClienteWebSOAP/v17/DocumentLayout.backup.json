@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91DAF7C2-EFFE-4782-AA94-538C8B017AFC}|ClienteWebSOAP\\ClienteWebSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliweb\\clientewebsoap\\clientewebsoap\\views\\banco\\movimientos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91DAF7C2-EFFE-4782-AA94-538C8B017AFC}|ClienteWebSOAP\\ClienteWebSOAP.csproj|solutionrelative:clientewebsoap\\views\\banco\\movimientos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91DAF7C2-EFFE-4782-AA94-538C8B017AFC}|ClienteWebSOAP\\ClienteWebSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliweb\\clientewebsoap\\clientewebsoap\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91DAF7C2-EFFE-4782-AA94-538C8B017AFC}|ClienteWebSOAP\\ClienteWebSOAP.csproj|solutionrelative:clientewebsoap\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91DAF7C2-EFFE-4782-AA94-538C8B017AFC}|ClienteWebSOAP\\ClienteWebSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliweb\\clientewebsoap\\clientewebsoap\\views\\banco\\transferir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91DAF7C2-EFFE-4782-AA94-538C8B017AFC}|ClienteWebSOAP\\ClienteWebSOAP.csproj|solutionrelative:clientewebsoap\\views\\banco\\transferir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91DAF7C2-EFFE-4782-AA94-538C8B017AFC}|ClienteWebSOAP\\ClienteWebSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliweb\\clientewebsoap\\clientewebsoap\\views\\banco\\saldo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91DAF7C2-EFFE-4782-AA94-538C8B017AFC}|ClienteWebSOAP\\ClienteWebSOAP.csproj|solutionrelative:clientewebsoap\\views\\banco\\saldo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91DAF7C2-EFFE-4782-AA94-538C8B017AFC}|ClienteWebSOAP\\ClienteWebSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliweb\\clientewebsoap\\clientewebsoap\\views\\banco\\retirar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91DAF7C2-EFFE-4782-AA94-538C8B017AFC}|ClienteWebSOAP\\ClienteWebSOAP.csproj|solutionrelative:clientewebsoap\\views\\banco\\retirar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91DAF7C2-EFFE-4782-AA94-538C8B017AFC}|ClienteWebSOAP\\ClienteWebSOAP.csproj|c:\\02.eurekabanc_soap_dotnet_gr04\\02.cliweb\\clientewebsoap\\clientewebsoap\\views\\banco\\depositar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91DAF7C2-EFFE-4782-AA94-538C8B017AFC}|ClienteWebSOAP\\ClienteWebSOAP.csproj|solutionrelative:clientewebsoap\\views\\banco\\depositar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Transferir.cshtml",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\ClienteWebSOAP\\Views\\Banco\\Transferir.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebSOAP\\Views\\Banco\\Transferir.cshtml",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\ClienteWebSOAP\\Views\\Banco\\Transferir.cshtml",
+              "RelativeToolTip": "ClienteWebSOAP\\Views\\Banco\\Transferir.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwBMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T05:31:39.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Saldo.cshtml",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\ClienteWebSOAP\\Views\\Banco\\Saldo.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebSOAP\\Views\\Banco\\Saldo.cshtml",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\ClienteWebSOAP\\Views\\Banco\\Saldo.cshtml",
+              "RelativeToolTip": "ClienteWebSOAP\\Views\\Banco\\Saldo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T05:30:48.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Retirar.cshtml",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\ClienteWebSOAP\\Views\\Banco\\Retirar.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebSOAP\\Views\\Banco\\Retirar.cshtml",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\ClienteWebSOAP\\Views\\Banco\\Retirar.cshtml",
+              "RelativeToolTip": "ClienteWebSOAP\\Views\\Banco\\Retirar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T05:29:51.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Movimientos.cshtml",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\ClienteWebSOAP\\Views\\Banco\\Movimientos.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebSOAP\\Views\\Banco\\Movimientos.cshtml",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\ClienteWebSOAP\\Views\\Banco\\Movimientos.cshtml",
+              "RelativeToolTip": "ClienteWebSOAP\\Views\\Banco\\Movimientos.cshtml",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAuwJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T05:27:49.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Depositar.cshtml",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\ClienteWebSOAP\\Views\\Banco\\Depositar.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebSOAP\\Views\\Banco\\Depositar.cshtml",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\ClienteWebSOAP\\Views\\Banco\\Depositar.cshtml",
+              "RelativeToolTip": "ClienteWebSOAP\\Views\\Banco\\Depositar.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T05:26:42.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\ClienteWebSOAP\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebSOAP\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\02.EUREKABANC_SOAP_DOTNET_GR04\\02.CLIWEB\\ClienteWebSOAP\\ClienteWebSOAP\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "ClienteWebSOAP\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T05:26:31.75Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

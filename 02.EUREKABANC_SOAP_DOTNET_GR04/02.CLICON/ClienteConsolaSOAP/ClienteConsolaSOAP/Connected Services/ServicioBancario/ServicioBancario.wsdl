@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Depositar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cuenta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="monto" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DepositarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DepositarResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Retirar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cuenta" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="monto" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetirarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetirarResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Transferir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cuentaOrigen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cuentaDestino" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="monto" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransferirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TransferirResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarSaldo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cuenta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarSaldoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConsultarSaldoResult" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarMovimientos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cuenta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarMovimientosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarMovimientosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DepositarSoapIn">
+    <wsdl:part name="parameters" element="tns:Depositar" />
+  </wsdl:message>
+  <wsdl:message name="DepositarSoapOut">
+    <wsdl:part name="parameters" element="tns:DepositarResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetirarSoapIn">
+    <wsdl:part name="parameters" element="tns:Retirar" />
+  </wsdl:message>
+  <wsdl:message name="RetirarSoapOut">
+    <wsdl:part name="parameters" element="tns:RetirarResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransferirSoapIn">
+    <wsdl:part name="parameters" element="tns:Transferir" />
+  </wsdl:message>
+  <wsdl:message name="TransferirSoapOut">
+    <wsdl:part name="parameters" element="tns:TransferirResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarSaldoSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarSaldo" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarSaldoSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarSaldoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarMovimientosSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarMovimientos" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarMovimientosSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarMovimientosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServicioBancarioSoap">
+    <wsdl:operation name="Depositar">
+      <wsdl:input message="tns:DepositarSoapIn" />
+      <wsdl:output message="tns:DepositarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Retirar">
+      <wsdl:input message="tns:RetirarSoapIn" />
+      <wsdl:output message="tns:RetirarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Transferir">
+      <wsdl:input message="tns:TransferirSoapIn" />
+      <wsdl:output message="tns:TransferirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSaldo">
+      <wsdl:input message="tns:ConsultarSaldoSoapIn" />
+      <wsdl:output message="tns:ConsultarSaldoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarMovimientos">
+      <wsdl:input message="tns:ConsultarMovimientosSoapIn" />
+      <wsdl:output message="tns:ConsultarMovimientosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicioBancarioSoap" type="tns:ServicioBancarioSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Depositar">
+      <soap:operation soapAction="http://tempuri.org/Depositar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Retirar">
+      <soap:operation soapAction="http://tempuri.org/Retirar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Transferir">
+      <soap:operation soapAction="http://tempuri.org/Transferir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSaldo">
+      <soap:operation soapAction="http://tempuri.org/ConsultarSaldo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarMovimientos">
+      <soap:operation soapAction="http://tempuri.org/ConsultarMovimientos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServicioBancarioSoap12" type="tns:ServicioBancarioSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Depositar">
+      <soap12:operation soapAction="http://tempuri.org/Depositar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Retirar">
+      <soap12:operation soapAction="http://tempuri.org/Retirar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Transferir">
+      <soap12:operation soapAction="http://tempuri.org/Transferir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSaldo">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarSaldo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarMovimientos">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarMovimientos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioBancario">
+    <wsdl:port name="ServicioBancarioSoap" binding="tns:ServicioBancarioSoap">
+      <soap:address location="http://10.40.25.123/ServicioBancario.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServicioBancarioSoap12" binding="tns:ServicioBancarioSoap12">
+      <soap12:address location="http://10.40.25.123/ServicioBancario.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

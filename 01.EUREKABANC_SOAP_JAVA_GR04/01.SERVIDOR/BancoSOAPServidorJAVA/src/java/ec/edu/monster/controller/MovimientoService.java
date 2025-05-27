@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ec.edu.monster.controller;
 
 import ec.edu.monster.config.DBConexion;
@@ -9,9 +5,11 @@ import ec.edu.monster.model.Movimiento;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
 import java.sql.*;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< HEAD
 /**
  *
  * @author sebas
@@ -58,13 +56,39 @@ public class MovimientoService {
             ps.setString(1, cuentaCodigo);
             ResultSet rs = ps.executeQuery();
 
+=======
+@WebService
+public class MovimientoService {
+    
+    @WebMethod
+    public List<Movimiento> listarMovimientosPorCuenta(String cuentaCodigo) {
+        List<Movimiento> lista = new ArrayList<>();
+        String sql = "SELECT m.*, tm.vch_tipodescripcion, tm.vch_tipoaccion " +
+                     "FROM movimiento m " +
+                     "JOIN tipomovimiento tm ON m.chr_tipocodigo = tm.chr_tipocodigo " +
+                     "WHERE m.chr_cuencodigo = ? " +
+                     "ORDER BY m.dtt_movifecha DESC, m.int_movinumero DESC";
+        
+        try (Connection con = DBConexion.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+            
+            ps.setString(1, cuentaCodigo);
+            ResultSet rs = ps.executeQuery();
+            
+>>>>>>> f314e0f09a32b7739f700b8e03fe9c5690fb3ec1
             while (rs.next()) {
                 Movimiento m = new Movimiento();
                 m.setCuentaCodigo(rs.getString("chr_cuencodigo"));
                 m.setNumeroMovimiento(rs.getInt("int_movinumero"));
-                m.setFecha(rs.getDate("dtt_movifecha").toString());
+                
+                // Convertir Timestamp a LocalDateTime
+                Timestamp timestamp = rs.getTimestamp("dtt_movifecha");
+                m.setFecha(timestamp != null ? timestamp.toLocalDateTime() : null);
+                
                 m.setEmpleadoCodigo(rs.getString("chr_emplcodigo"));
                 m.setTipoCodigo(rs.getString("chr_tipocodigo"));
+                m.setDescripcionTipo(rs.getString("vch_tipodescripcion"));
+                m.setAccionTipo(rs.getString("vch_tipoaccion"));
                 m.setImporte(rs.getDouble("dec_moviimporte"));
                 m.setCuentaReferencia(rs.getString("chr_cuenreferencia"));
                 lista.add(m);

@@ -1,0 +1,17 @@
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\ApiBancariaREST.exe
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\ApiBancariaREST.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\ApiBancariaREST.deps.json
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\ApiBancariaREST.runtimeconfig.json
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\ApiBancariaREST.pdb
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\System.Data.SqlClient.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\runtimes\win-arm64\native\sni.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\runtimes\win-x64\native\sni.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\runtimes\win-x86\native\sni.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\01.SERVIDOR\ApiBancariaREST\ApiBancariaREST\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net8.0\System.Data.SqlClient.dll

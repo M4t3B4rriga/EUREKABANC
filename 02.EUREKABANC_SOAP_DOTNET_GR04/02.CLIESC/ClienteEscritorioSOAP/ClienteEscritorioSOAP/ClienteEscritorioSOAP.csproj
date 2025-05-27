@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8D2325C-F4DC-49A0-ACE2-853FDBFE4AFA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ClienteEscritorioSOAP</RootNamespace>
+    <AssemblyName>ClienteEscritorioSOAP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connected Services\ServicioBancario\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ec.edu.monster.controlador\ControladorCliente.cs" />
+    <Compile Include="ec.edu.monster.modelo\Usuario.cs" />
+    <Compile Include="ec.edu.monster.vista\DepositarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\DepositarForm.Designer.cs">
+      <DependentUpon>DepositarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\MovimientosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\MovimientosForm.Designer.cs">
+      <DependentUpon>MovimientosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\RetirarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\RetirarForm.Designer.cs">
+      <DependentUpon>RetirarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\SaldoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\SaldoForm.Designer.cs">
+      <DependentUpon>SaldoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\TransferirForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ec.edu.monster.vista\TransferirForm.Designer.cs">
+      <DependentUpon>TransferirForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ec.edu.monster.vista\DepositarForm.resx">
+      <DependentUpon>DepositarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ec.edu.monster.vista\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ec.edu.monster.vista\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ec.edu.monster.vista\MovimientosForm.resx">
+      <DependentUpon>MovimientosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ec.edu.monster.vista\RetirarForm.resx">
+      <DependentUpon>RetirarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ec.edu.monster.vista\SaldoForm.resx">
+      <DependentUpon>SaldoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ec.edu.monster.vista\TransferirForm.resx">
+      <DependentUpon>TransferirForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Connected Services\ServicioBancario\ServicioBancario.wsdl" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServicioBancario\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioBancario\ServicioBancario.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioBancario\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioBancario\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioBancario\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

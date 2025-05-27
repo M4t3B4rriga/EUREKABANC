@@ -1,0 +1,76 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú Principal - UrekaBank</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('/Content/Menu.png'); /* Cambia por la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 150vh;
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 400px;
+            margin: 100px auto;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px 0;
+        }
+
+        a {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #1e90ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+            a:hover {
+                background-color: #4682b4;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Menú Principal - UrekaBank</h2>
+
+        <ul>
+            <li>@Html.ActionLink("Depositar", "Depositar", "Banco")</li>
+            <li>@Html.ActionLink("Retirar", "Retirar", "Banco")</li>
+            <li>@Html.ActionLink("Transferir", "Transferir", "Banco")</li>
+            <li>@Html.ActionLink("Consultar Saldo", "Saldo", "Banco")</li>
+            <li>@Html.ActionLink("Consultar Movimientos", "Movimientos", "Banco")</li>
+        </ul>
+    </div>
+</body>
+</html>

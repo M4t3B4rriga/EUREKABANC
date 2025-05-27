@@ -1,0 +1,7 @@
+C:\02.EUREKABANC_SOAP_DOTNET_GR04\02.CLICON\ClienteConsolaSOAP\ClienteConsolaSOAP\bin\Debug\ClienteConsolaSOAP.exe.config
+C:\02.EUREKABANC_SOAP_DOTNET_GR04\02.CLICON\ClienteConsolaSOAP\ClienteConsolaSOAP\bin\Debug\ClienteConsolaSOAP.exe
+C:\02.EUREKABANC_SOAP_DOTNET_GR04\02.CLICON\ClienteConsolaSOAP\ClienteConsolaSOAP\bin\Debug\ClienteConsolaSOAP.pdb
+C:\02.EUREKABANC_SOAP_DOTNET_GR04\02.CLICON\ClienteConsolaSOAP\ClienteConsolaSOAP\obj\Debug\ClienteConsolaSOAP.csproj.AssemblyReference.cache
+C:\02.EUREKABANC_SOAP_DOTNET_GR04\02.CLICON\ClienteConsolaSOAP\ClienteConsolaSOAP\obj\Debug\ClienteConsolaSOAP.csproj.CoreCompileInputs.cache
+C:\02.EUREKABANC_SOAP_DOTNET_GR04\02.CLICON\ClienteConsolaSOAP\ClienteConsolaSOAP\obj\Debug\ClienteConsolaSOAP.exe
+C:\02.EUREKABANC_SOAP_DOTNET_GR04\02.CLICON\ClienteConsolaSOAP\ClienteConsolaSOAP\obj\Debug\ClienteConsolaSOAP.pdb

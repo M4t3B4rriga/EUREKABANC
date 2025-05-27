@@ -2,6 +2,7 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group>
             <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/model/Cuenta.java</file>
             <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/controller/MovimientoService.java</file>
@@ -10,5 +11,8 @@
             <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/ws/BancoWS.java</file>
             <file>file:/C:/00.%20SOA_SIN_BDD/EURECKBANC_GIT/01.EUREKABANC_SOAP_JAVA_GR04/01.SERVIDOR/BancoSOAPServidorJAVA/src/java/ec/edu/monster/config/DBConexion.java</file>
         </group>
+=======
+        <group/>
+>>>>>>> f314e0f09a32b7739f700b8e03fe9c5690fb3ec1
     </open-files>
 </project-private>
