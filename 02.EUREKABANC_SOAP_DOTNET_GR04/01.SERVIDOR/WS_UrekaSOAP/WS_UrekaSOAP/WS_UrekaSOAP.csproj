@@ -67,14 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ServicioUreka.asmx" />
+    <Content Include="ServicioBancario.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ec.edu.monster.servicio\ConexionBD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServicioUreka.asmx.cs">
-      <DependentUpon>ServicioUreka.asmx</DependentUpon>
+    <Compile Include="ServicioBancario.asmx.cs">
+      <DependentUpon>ServicioBancario.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
