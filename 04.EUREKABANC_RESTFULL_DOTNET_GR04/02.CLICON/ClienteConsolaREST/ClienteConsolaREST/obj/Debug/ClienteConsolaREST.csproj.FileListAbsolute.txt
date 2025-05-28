@@ -1,0 +1,15 @@
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\bin\Debug\ClienteConsolaREST.exe.config
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\bin\Debug\ClienteConsolaREST.exe
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\bin\Debug\ClienteConsolaREST.pdb
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\bin\Debug\JsonConverter.Abstractions.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\bin\Debug\JsonConverter.Newtonsoft.Json.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\bin\Debug\Newtonsoft.Json.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\bin\Debug\Plugin.Payments.Weixin.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\bin\Debug\Stef.Validation.dll
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\bin\Debug\Newtonsoft.Json.xml
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\obj\Debug\ClienteConsolaREST.csproj.AssemblyReference.cache
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\obj\Debug\ClienteConsolaREST.csproj.CoreCompileInputs.cache
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\obj\Debug\ClienteC.365056B8.Up2Date
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\obj\Debug\ClienteConsolaREST.exe
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\obj\Debug\ClienteConsolaREST.pdb
+C:\04.EUREKABANC_RESTFULL_DOTNET_GR04\02.CLICON\ClienteConsolaREST\ClienteConsolaREST\obj\Debug\ClienteConsolaREST.exe.config

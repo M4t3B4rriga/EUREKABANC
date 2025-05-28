@@ -1,0 +1,101 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Consultar Movimientos</title>
+    <style>
+        body {
+            background-image: url('/Content/ConsultaSaldo.png'); /* Usa tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(0,0,0,0.7);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: 60px auto;
+            text-align: center;
+        }
+
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            background-color: #1e90ff;
+            color: white;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid white;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1e90ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Consultar Movimientos</h2>
+        <form method="post" action="/Banco/Movimientos">
+            <label>Cuenta:</label>
+            <input type="text" name="cuenta" required />
+            <input type="submit" value="Consultar" />
+        </form>
+
+        @if (Model != null && Model.Count > 0)
+        {
+            <table>
+                <tr>
+                    <th>Código Cuenta</th>
+                    <th>Número Movimiento</th>
+                    <th>Fecha</th>
+                    <th>Tipo</th>
+                    <th>Importe</th>
+                    <th>Referencia</th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.chr_cuencodigo</td>
+                        <td>@item.int_movinumero</td>
+                        <td>@item.dtt_movifecha.ToString("g")</td>
+                        <td>@item.chr_tipocodigo</td>
+                        <td>@item.dec_moviimporte</td>
+                        <td>@item.chr_cuenreferencia</td>
+                    </tr>
+                }
+            </table>
+        }
+        else if (Model != null)
+        {
+            <p>No se encontraron movimientos.</p>
+        }
+    </div>
+</body>
+</html>

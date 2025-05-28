@@ -1,0 +1,61 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Menú Principal - UrekaBank</title>
+    <style>
+        body {
+            background-image: url('/Content/Menu.png');
+            background-size: cover;
+            background-position: center;
+            height: 150vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .menu-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        a {
+            display: block;
+            background-color: #1e90ff;
+            color: white;
+            padding: 12px;
+            margin: 10px 0;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+            a:hover {
+                background-color: #4682b4;
+            }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h2>Menú Principal - UrekaBank</h2>
+
+        <a href="/Banco/Depositar">Depositar</a>
+        <a href="/Banco/Retirar">Retirar</a>
+        <a href="/Banco/Transferir">Transferir</a>
+        <a href="/Banco/Saldo">Consultar Saldo</a>
+        <a href="/Banco/Movimientos">Consultar Movimientos</a>
+    </div>
+</body>
+</html>

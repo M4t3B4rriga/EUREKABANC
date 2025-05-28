@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliweb\\clientewebrest\\clientewebrest\\ec.edu.monster.controlador\\bancocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|solutionrelative:clientewebrest\\ec.edu.monster.controlador\\bancocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliweb\\clientewebrest\\clientewebrest\\views\\banco\\movimientos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|solutionrelative:clientewebrest\\views\\banco\\movimientos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliweb\\clientewebrest\\clientewebrest\\views\\banco\\depositar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|solutionrelative:clientewebrest\\views\\banco\\depositar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliweb\\clientewebrest\\clientewebrest\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|solutionrelative:clientewebrest\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliweb\\clientewebrest\\clientewebrest\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|solutionrelative:clientewebrest\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliweb\\clientewebrest\\clientewebrest\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|solutionrelative:clientewebrest\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliweb\\clientewebrest\\clientewebrest\\views\\banco\\transferir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|solutionrelative:clientewebrest\\views\\banco\\transferir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliweb\\clientewebrest\\clientewebrest\\views\\banco\\saldo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|solutionrelative:clientewebrest\\views\\banco\\saldo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliweb\\clientewebrest\\clientewebrest\\views\\banco\\retirar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|solutionrelative:clientewebrest\\views\\banco\\retirar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliweb\\clientewebrest\\clientewebrest\\views\\banco\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E201F7FA-C7D8-49DC-BFC6-96D9A3D3D643}|ClienteWebREST\\ClienteWebREST.csproj|solutionrelative:clientewebrest\\views\\banco\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "ClienteWebREST\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "ClienteWebREST\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T01:44:27.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Depositar.cshtml",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Banco\\Depositar.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebREST\\Views\\Banco\\Depositar.cshtml",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Banco\\Depositar.cshtml",
+              "RelativeToolTip": "ClienteWebREST\\Views\\Banco\\Depositar.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T01:45:20.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BancoController.cs",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\ec.edu.monster.controlador\\BancoController.cs",
+              "RelativeDocumentMoniker": "ClienteWebREST\\ec.edu.monster.controlador\\BancoController.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\ec.edu.monster.controlador\\BancoController.cs",
+              "RelativeToolTip": "ClienteWebREST\\ec.edu.monster.controlador\\BancoController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAIwFoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T01:37:46.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Retirar.cshtml",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Banco\\Retirar.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebREST\\Views\\Banco\\Retirar.cshtml",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Banco\\Retirar.cshtml",
+              "RelativeToolTip": "ClienteWebREST\\Views\\Banco\\Retirar.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T01:52:48.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Movimientos.cshtml",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Banco\\Movimientos.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebREST\\Views\\Banco\\Movimientos.cshtml",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Banco\\Movimientos.cshtml",
+              "RelativeToolTip": "ClienteWebREST\\Views\\Banco\\Movimientos.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T01:52:03.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Banco\\Index.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebREST\\Views\\Banco\\Index.cshtml",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Banco\\Index.cshtml",
+              "RelativeToolTip": "ClienteWebREST\\Views\\Banco\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T01:48:10.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebREST\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "ClienteWebREST\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAD8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T01:47:37.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Global.asax.cs",
+              "RelativeDocumentMoniker": "ClienteWebREST\\Global.asax.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Global.asax.cs",
+              "RelativeToolTip": "ClienteWebREST\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T01:41:04.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Transferir.cshtml",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Banco\\Transferir.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebREST\\Views\\Banco\\Transferir.cshtml",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Banco\\Transferir.cshtml",
+              "RelativeToolTip": "ClienteWebREST\\Views\\Banco\\Transferir.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T01:55:40.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Saldo.cshtml",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Banco\\Saldo.cshtml",
+              "RelativeDocumentMoniker": "ClienteWebREST\\Views\\Banco\\Saldo.cshtml",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIWEB\\ClienteWebREST\\ClienteWebREST\\Views\\Banco\\Saldo.cshtml",
+              "RelativeToolTip": "ClienteWebREST\\Views\\Banco\\Saldo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T01:54:23.539Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Depositar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('/Content/Depositos.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 150vh;
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            width: 400px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            background-color: #1e90ff;
+            color: white;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #4682b4;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Depositar</h2>
+        <form method="post">
+            <input type="text" name="cuenta" placeholder="Número de Cuenta" />
+            <input type="number" name="monto" placeholder="Monto" />
+            <button type="submit">Depositar</button>
+        </form>
+        @if (ViewBag.Mensaje != null)
+        {
+            <p>@ViewBag.Mensaje</p>
+        }
+        <a href="@Url.Action("Index", "Banco")">Regresar al Menú</a>
+    </div>
+</body>
+</html>

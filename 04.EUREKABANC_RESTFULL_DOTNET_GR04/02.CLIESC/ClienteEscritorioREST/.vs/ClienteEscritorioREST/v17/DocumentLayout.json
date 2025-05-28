@@ -1,0 +1,285 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\transferirform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\transferirform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\saldoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\saldoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\retirarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\retirarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\movimientosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\movimientosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\depositarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\depositarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\movimientosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\movimientosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\saldoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\saldoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\transferirform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\transferirform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\retirarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\retirarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\depositarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\depositarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.controlador\\bancocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.controlador\\bancocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|c:\\04.eurekabanc_restfull_dotnet_gr04\\02.cliesc\\clienteescritoriorest\\clienteescritoriorest\\ec.edu.monster.vista\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8590CF2-7B45-48DB-8902-36CD12BDB16B}|ClienteEscritorioREST\\ClienteEscritorioREST.csproj|solutionrelative:clienteescritoriorest\\ec.edu.monster.vista\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\LoginForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\LoginForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\LoginForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\LoginForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:36:45.108Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MenuForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\MenuForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\MenuForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\MenuForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\MenuForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T14:09:29.422Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MovimientosForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\MovimientosForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\MovimientosForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\MovimientosForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\MovimientosForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:51:44.053Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SaldoForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\SaldoForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\SaldoForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\SaldoForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\SaldoForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:48:25.909Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RetirarForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\RetirarForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\RetirarForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\RetirarForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\RetirarForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:50:32.953Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransferirForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\TransferirForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\TransferirForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\TransferirForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\TransferirForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:54:55.153Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DepositarForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\DepositarForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\DepositarForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\DepositarForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\DepositarForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:39:50.849Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MovimientosForm.cs",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\MovimientosForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\MovimientosForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\MovimientosForm.cs",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\MovimientosForm.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAawCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:51:45.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DepositarForm.cs",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\DepositarForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\DepositarForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\DepositarForm.cs",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\DepositarForm.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAArwCQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:39:52.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RetirarForm.cs",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\RetirarForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\RetirarForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\RetirarForm.cs",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\RetirarForm.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvzIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:50:34.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TransferirForm.cs",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\TransferirForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\TransferirForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\TransferirForm.cs",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\TransferirForm.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:31:23.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SaldoForm.cs",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\SaldoForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\SaldoForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\SaldoForm.cs",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\SaldoForm.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAApwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:51:10.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\Program.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\Program.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\Program.cs",
+              "RelativeToolTip": "ClienteEscritorioREST\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:36:14.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\LoginForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\LoginForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\LoginForm.cs",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\LoginForm.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAArwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:36:47.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BancoController.cs",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.controlador\\BancoController.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.controlador\\BancoController.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.controlador\\BancoController.cs",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.controlador\\BancoController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T16:35:55.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MenuForm.cs",
+              "DocumentMoniker": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\MenuForm.cs",
+              "RelativeDocumentMoniker": "ClienteEscritorioREST\\ec.edu.monster.vista\\MenuForm.cs",
+              "ToolTip": "C:\\04.EUREKABANC_RESTFULL_DOTNET_GR04\\02.CLIESC\\ClienteEscritorioREST\\ClienteEscritorioREST\\ec.edu.monster.vista\\MenuForm.cs",
+              "RelativeToolTip": "ClienteEscritorioREST\\ec.edu.monster.vista\\MenuForm.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAADUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T14:28:31.896Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

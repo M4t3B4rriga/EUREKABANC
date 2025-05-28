@@ -1,0 +1,97 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Transferir - UrekaBank</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('/Content/Transferencia.png'); /* Cambia la ruta según tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            width: 400px;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="number"], input[type="submit"] {
+            padding: 10px;
+            width: 90%;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        input[type="submit"] {
+            background-color: #1e90ff;
+            color: white;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #4682b4;
+            }
+
+        p {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+            a:hover {
+                background-color: #4682b4;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Transferir Fondos</h2>
+
+        <form method="post">
+            <input type="text" name="cuentaOrigen" placeholder="Cuenta Origen" />
+            <input type="text" name="cuentaDestino" placeholder="Cuenta Destino" />
+            <input type="number" name="monto" placeholder="Monto a transferir" />
+            <input type="submit" value="Transferir" />
+        </form>
+
+        @if (ViewBag.Mensaje != null)
+        {
+            <p>@ViewBag.Mensaje</p>
+        }
+
+        <a href="@Url.Action("Index", "Banco")">Regresar al Menú</a>
+    </div>
+</body>
+</html>
