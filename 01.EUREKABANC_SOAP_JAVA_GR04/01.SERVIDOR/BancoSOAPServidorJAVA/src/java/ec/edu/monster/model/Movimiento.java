@@ -1,11 +1,30 @@
 package ec.edu.monster.model;
+<<<<<<< HEAD
+import java.util.Date;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+=======
 
 import java.time.LocalDateTime;
 
+>>>>>>> f314e0f09a32b7739f700b8e03fe9c5690fb3ec1
 /**
  *
  * @author sebas
  */
+@XmlRootElement(name = "Movimiento")
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(propOrder = {
+    "cuentaCodigo",
+    "numeroMovimiento",
+    "fecha",
+    "empleadoCodigo",
+    "tipoCodigo",
+    "importe",
+    "cuentaReferencia"
+})
 public class Movimiento {
     private String cuentaCodigo;       // chr_cuencodigo
     private int numeroMovimiento;      // int_movinumero
@@ -17,7 +36,11 @@ public class Movimiento {
     private double importe;            // dec_moviimporte
     private String cuentaReferencia;   // chr_cuenreferencia
 
+    
+    public Movimiento() {}
+
     // Getters y Setters
+    
     public String getCuentaCodigo() {
         return cuentaCodigo;
     }

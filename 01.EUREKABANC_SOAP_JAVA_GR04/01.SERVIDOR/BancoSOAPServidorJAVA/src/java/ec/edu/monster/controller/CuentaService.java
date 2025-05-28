@@ -1,5 +1,12 @@
 package ec.edu.monster.controller;
 
+<<<<<<< HEAD
+/**
+ *
+ * @author sebas
+ */
+=======
+>>>>>>> f314e0f09a32b7739f700b8e03fe9c5690fb3ec1
 import ec.edu.monster.config.DBConexion;
 import ec.edu.monster.model.Cuenta;
 import jakarta.jws.WebMethod;
@@ -10,13 +17,14 @@ import java.util.List;
 
 @WebService
 public class CuentaService {
-    
+
+    private final MovimientoService movimientoService = new MovimientoService();
+
     @WebMethod
     public String registrarCuenta(Cuenta cuenta) {
         String sql = "INSERT INTO cuenta(chr_cuencodigo, chr_monecodigo, chr_sucucodigo, chr_emplcreacuenta, chr_cliecodigo, dec_cuensaldo, dtt_cuenfechacreacion, vch_cuenestado, int_cuencontmov, chr_cuenclave) "
-                   + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        try (Connection con = DBConexion.getConnection();
-             PreparedStatement ps = con.prepareStatement(sql)) {
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        try (Connection con = DBConexion.getConnection(); PreparedStatement ps = con.prepareStatement(sql)) {
 
             ps.setString(1, cuenta.getCodigo());
             ps.setString(2, cuenta.getMoneda());
@@ -45,9 +53,7 @@ public class CuentaService {
     public List<Cuenta> listarCuentas() {
         List<Cuenta> lista = new ArrayList<>();
         String sql = "SELECT * FROM cuenta";
-        try (Connection con = DBConexion.getConnection();
-             Statement st = con.createStatement();
-             ResultSet rs = st.executeQuery(sql)) {
+        try (Connection con = DBConexion.getConnection(); Statement st = con.createStatement(); ResultSet rs = st.executeQuery(sql)) {
             while (rs.next()) {
                 Cuenta c = new Cuenta();
                 c.setCodigo(rs.getString("chr_cuencodigo"));
@@ -67,9 +73,31 @@ public class CuentaService {
         }
         return lista;
     }
-    
+
     @WebMethod
     public String depositar(String cuentaCodigo, double monto) {
+<<<<<<< HEAD
+        if (monto <= 0) {
+            return "Monto inválido";
+        }
+        String sql = "UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo + ? WHERE chr_cuencodigo = ?";
+        try (Connection con = DBConexion.getConnection()) {
+            con.setAutoCommit(false);
+
+            try (PreparedStatement ps = con.prepareStatement(sql)) {
+                ps.setDouble(1, monto);
+                ps.setString(2, cuentaCodigo);
+                int rows = ps.executeUpdate();
+                if (rows > 0) {
+                    movimientoService.registrarMovimiento(con, cuentaCodigo, "003", monto, "0001", null); // tipo "003" = DEPÓSITO, empleado fijo
+                    con.commit();
+                    return "Depósito exitoso";
+                } else {
+                    con.rollback();
+                    return "Cuenta no encontrada";
+                }
+            }
+=======
         if (monto <= 0) return "Monto inválido";
         
         try (Connection con = DBConexion.getConnection()) {
@@ -123,6 +151,36 @@ public class CuentaService {
             
             con.commit();
             return "Retiro exitoso";
+>>>>>>> f314e0f09a32b7739f700b8e03fe9c5690fb3ec1
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return "Error: " + e.getMessage();
+        }
+    }
+
+    @WebMethod
+<<<<<<< HEAD
+    public String retirar(String cuentaCodigo, double monto) {
+        if (monto <= 0) {
+            return "Monto inválido";
+        }
+        String sql = "UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo - ? WHERE chr_cuencodigo = ? AND dec_cuensaldo >= ?";
+        try (Connection con = DBConexion.getConnection()) {
+            con.setAutoCommit(false);
+            try (PreparedStatement ps = con.prepareStatement(sql)) {
+                ps.setDouble(1, monto);
+                ps.setString(2, cuentaCodigo);
+                ps.setDouble(3, monto);
+                int rows = ps.executeUpdate();
+                if (rows > 0) {
+                    movimientoService.registrarMovimiento(con, cuentaCodigo, "004", monto, "0001", null); // tipo 004 = RETIRO
+                    con.commit();
+                    return "Retiro exitoso";
+                } else {
+                    con.rollback();
+                    return "Saldo insuficiente o cuenta no encontrada";
+                }
+            }
         } catch (SQLException e) {
             e.printStackTrace();
             return "Error: " + e.getMessage();
@@ -131,33 +189,54 @@ public class CuentaService {
 
     @WebMethod
     public String transferir(String origen, String destino, double monto) {
+        if (monto <= 0) {
+            return "Monto inválido";
+        }
+=======
+    public String transferir(String origen, String destino, double monto) {
         if (monto <= 0) return "Monto inválido";
+>>>>>>> f314e0f09a32b7739f700b8e03fe9c5690fb3ec1
 
         try (Connection con = DBConexion.getConnection()) {
             con.setAutoCommit(false);
 
+<<<<<<< HEAD
+            // Retirar de origen
+            PreparedStatement ps1 = con.prepareStatement("UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo - ? WHERE chr_cuencodigo = ? AND dec_cuensaldo >= ?");
+=======
             // 1. Retirar de origen
             PreparedStatement ps1 = con.prepareStatement(
                 "UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo - ?, int_cuencontmov = int_cuencontmov + 1 " +
                 "WHERE chr_cuencodigo = ? AND dec_cuensaldo >= ?");
+>>>>>>> f314e0f09a32b7739f700b8e03fe9c5690fb3ec1
             ps1.setDouble(1, monto);
             ps1.setString(2, origen);
             ps1.setDouble(3, monto);
             int row1 = ps1.executeUpdate();
 
+<<<<<<< HEAD
+            // Depositar a destino
+            PreparedStatement ps2 = con.prepareStatement("UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo + ? WHERE chr_cuencodigo = ?");
+=======
             // 2. Depositar a destino
             PreparedStatement ps2 = con.prepareStatement(
                 "UPDATE cuenta SET dec_cuensaldo = dec_cuensaldo + ?, int_cuencontmov = int_cuencontmov + 1 " +
                 "WHERE chr_cuencodigo = ?");
+>>>>>>> f314e0f09a32b7739f700b8e03fe9c5690fb3ec1
             ps2.setDouble(1, monto);
             ps2.setString(2, destino);
             int row2 = ps2.executeUpdate();
 
             if (row1 > 0 && row2 > 0) {
+<<<<<<< HEAD
+                movimientoService.registrarMovimiento(con, origen, "004", monto, "0001", destino); // tipo 004 = RETIRO
+                movimientoService.registrarMovimiento(con, destino, "003", monto, "0001", origen); // tipo 003 = DEPÓSITO    
+=======
                 // 3. Registrar movimientos
                 registrarMovimiento(con, origen, "009", monto, destino, "9999"); // "009" = Transferencia (salida)
                 registrarMovimiento(con, destino, "008", monto, origen, "9999"); // "008" = Transferencia (entrada)
                 
+>>>>>>> f314e0f09a32b7739f700b8e03fe9c5690fb3ec1
                 con.commit();
                 return "Transferencia exitosa";
             } else {
@@ -173,8 +252,12 @@ public class CuentaService {
     @WebMethod
     public double verSaldo(String cuentaCodigo) {
         String sql = "SELECT dec_cuensaldo FROM cuenta WHERE chr_cuencodigo = ?";
+<<<<<<< HEAD
+        try (Connection con = DBConexion.getConnection(); PreparedStatement ps = con.prepareStatement(sql)) {
+=======
         try (Connection con = DBConexion.getConnection();
              PreparedStatement ps = con.prepareStatement(sql)) {
+>>>>>>> f314e0f09a32b7739f700b8e03fe9c5690fb3ec1
             ps.setString(1, cuentaCodigo);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -194,6 +277,9 @@ public class CuentaService {
             return "Error: " + e.getMessage();
         }
     }
+<<<<<<< HEAD
+}
+=======
     
     // Métodos auxiliares para registrar movimientos
     
@@ -235,3 +321,4 @@ public class CuentaService {
         }
     }
 }
+>>>>>>> f314e0f09a32b7739f700b8e03fe9c5690fb3ec1
